@@ -9,7 +9,6 @@
 
 ## 2.1. Установка
 ![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/8f3cff26-79f3-4fd1-914e-81d25fe81a2d)
-![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/8f3cff26-79f3-4fd1-914e-81d25fe81a2d)
 
 ## 2.2. Настройка
  ![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/52181630-ef79-4707-a64c-982ccb1dd510)

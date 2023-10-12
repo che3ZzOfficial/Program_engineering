@@ -10,10 +10,13 @@
  ![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/52181630-ef79-4707-a64c-982ccb1dd510)
 
 ## 2.3. Создание нового репозитория
+![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/249913bc-97f8-46bf-b0a8-d3ab7609eb32)
 
 ## 2.4. Подготовка файлов
+![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/f7ede9d0-68c0-4106-9f16-9a92703e00a1)
 
 ## 2.5. Фиксация изменений
+![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/7601cb9c-58c8-4c0a-bf3d-77ae3bec9cfa)
 
 ## 2.6. Подключение к удаленному репозиторию
 

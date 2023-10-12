@@ -8,7 +8,8 @@
 к.э.н., доцент Панов М.А.
 
 ## 2.1. Установка
-![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/8f3cff26-79f3-4fd1-914e-81d25fe81a2d)
+![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/dedc91d9-da8e-4061-9b58-97e1fdf5a2c9)
+
 
 ## 2.2. Настройка
  ![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/52181630-ef79-4707-a64c-982ccb1dd510)

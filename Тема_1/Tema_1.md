@@ -10,48 +10,64 @@
 ## 2.1. Установка
 ![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/dedc91d9-da8e-4061-9b58-97e1fdf5a2c9)
 
-
 ## 2.2. Настройка
- ![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/52181630-ef79-4707-a64c-982ccb1dd510)
+![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/5ba154b6-49cd-443c-93bd-1c727bc57468)
+
 
 ## 2.3. Создание нового репозитория
-![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/249913bc-97f8-46bf-b0a8-d3ab7609eb32)
+![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/9adebb2b-b26a-49bb-9825-572ab62ed41c)
+
 
 ## 2.4. Подготовка файлов
-![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/f7ede9d0-68c0-4106-9f16-9a92703e00a1)
+![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/cce0421d-c790-4c07-9f46-d0ba40b20623)
+
+
 
 ## 2.5. Фиксация изменений
-![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/7601cb9c-58c8-4c0a-bf3d-77ae3bec9cfa)
+![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/0ccfa2e7-4f92-4daf-8629-467f1f7006f0)
+
 
 ## 2.6. Подключение к удаленному репозиторию
-![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/68ae5954-ac47-4655-b674-e4a2754ace49)
+![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/1de4fdb8-90eb-4d88-b665-996e178e7a07)
+
 
 ## 2.7. Ветвление
-![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/1026a934-96c3-495e-908f-9110fcfdbf42)
+![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/b35d41fa-c7e5-47b6-8ebb-cbbc57da4516)
+
 
 ## 2.8. Особенности применения «Фетч»
-![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/46a28c91-aa56-4db4-a999-0aba16b73ead)
+![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/a5298824-ce3f-4fd8-86fc-113cd330b5b9)
+
 
 
 ## 2.9. Удаление файлов, веток, локальных и удалённых репозиториев
-![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/512c27f4-180a-4e0f-b839-c27f9f25f1d6)
+![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/2cb4d35c-a546-49d9-9f18-3a990a69551d)
+
 
 ## 2.10. Отслеживание изменений в коммитах
-![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/a55678b5-8ef7-43db-a28d-382d8ee259fa)
+![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/41908df4-db6e-4163-b980-9d0b3e6dd1dc)
+
+
 
 ## 2.11. Возвращение файла к предыдущему (определенному) состоянию
-![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/5f9c802c-71bf-40e1-a6be-0ea0a0ef515f)
+![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/69af6e25-13a8-42f0-ac0f-4ed176234004)
+
+
 
 ## 2.12. Возвращение к предыдущему коммиту
-![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/cf6a8fe6-fb85-40aa-8995-82e218214083)
+![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/bc65e3bd-f6cd-41ff-b860-a467f0941d30)
+
 ## 2.13. Исправление коммита
-![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/cabecb53-ab44-479c-9fa5-2e788a683d98)
+![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/bfcb48d7-d76d-4cb2-871d-4df449d78852)
+
 
 ## 2.14. Разрешение конфликтов при слиянии
-![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/a9131e95-f18d-4558-8bab-644f7b2c3d5c)
+![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/fc874af9-af71-433b-a6dc-98ad46a29c02)
+
 
 ## 2.15. Настройка .gitignore
-![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/0df97062-dd3b-4988-8788-9442e28767a2)
+![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/00a61539-09e3-43a6-96c8-60b0b05691a7)
+
 
 Общий вывод:
 Изучил команды и функции в Распределённой системе управления версиями - Git в интерфейсе Bash. 

@@ -25,98 +25,89 @@
 ### Составьте текстовый файл и положите его в одну директорию с программой на Python. Текстовый файл должен состоять минимум из двух строк.
 
 ### Результат.
-![Меню](lab/pic/1.png)
+![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/362ca4d0-6618-482f-b194-0597df558293)
 
 ## Выводы
 
-Была создана папка и текстовый файл.
+В папку где были .py файлы закинул текстовый файл.
 
 ## Лабораторная работа №2
 ### Напишите программу, которая выведет только первую строку из вашего файла, при этом используйте конструкцию open()/close().
 
 ```python
-f = open('input.txt', 'r')
+f = open('qwe.txt', 'r')
 print(f.readline())
 f.close()
 ```
 ### Результат.
-![Меню](lab/pic/2.png)
+![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/f0d996a6-cebb-4678-a2db-e9d638fc01a9)
 
 ## Выводы
 
-В данном коде выводятся одна строка с использованием функции `print()`. Каждая строка содержит разные значения:
-
-1. `print(f.readline())`: Выводится первая строка. 
+Написали программу где выведет только первую строку из текстового файла.
 
 ## Лабораторная работа №3
 ### Напишите программу, которая выведет все строки из вашего файла в массиве, при этом используйте конструкцию open()/close().
 
 ```python
-f = open('input.txt', 'r')
+f = open('qwe.txt', 'r')
 print(f.readlines())
 f.close()
 ```
 ### Результат.
-![Меню](lab/pic/3.png)
+![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/5e400eab-0e9f-41a5-917f-7fc3e97e10a7)
+
 
 ## Выводы
 
-В данном коде выводятся одна строка с использованием функции `print()`. Каждая строка содержит разные значения:
-
-1. `print(f.readlines())`: Выводится выводит все строки. 
+Написали программу где выведет все строки из текстового файла.
 
 
 ## Лабораторная работа №4
 ### Напишите программу, которая выведет все строки из вашего файла в массиве, при этом используйте конструкцию with open().
 ```python
-with open('input.txt') as f:
+with open('qwe.txt') as f:
 	print(f.readlines())
 ```
 ### Результат.
-![Меню](lab/pic/4.png)
+![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/c32a2363-4011-423d-9540-d4795efa5ab6)
 
 ## Выводы
 
-В данном коде выводятся одна строка с использованием функции `print()`. Каждая строка содержит разные значения:
-
-1. `print(f.readlines())`: Выводится выводит все строки.
+Написали программу где выведет все строки файла в массиве.
 
 ## Лабораторная работа №5
 ### Напишите программу, которая выведет каждую строку из вашего файла отдельно, при этом используйте конструкцию with open().
 
 ```python
-with open('input.txt') as f:
+with open('qwe.txt') as f:
 	for line in f:
 		print(line)
 ```
 ### Результат.
-![Меню](lab/pic/5.png)
+![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/5d5dd37a-b779-4d08-b6c2-7e61c8f4fe4a)
 
 ## Выводы
 
-В данном коде выводятся одна строка с использованием функции `print()`. Каждая строка содержит разные значения:
-
-1. `print(line)`: Выводится каждую строку отдельно. 
+Написали программу где каждая строка выводится отдельно отделяя пустрой строкой.
 
 ## Лабораторная работа №6
 ### Напишите программу, которая будет добавлять новую строку в ваш файл, а потом выведет полученный файл в консоль. Вывод можно осуществлять любым способом. Обязательно проверьте сам файл, чтобы изменения в нем тоже отображались.
 
 ```python
-with open('input.txt', 'a+') as f:
+with open('qwe.txt', 'a+') as f:
     f.write('\nAdd stroka')
 
-with open('input.txt', 'r') as f:
+with open('qwe.txt', 'r') as f:
     result = f.readlines()
     print(result)
 ```
 ### Результат.
-![Меню](lab/pic/6.png)
+![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/a040251d-7ac5-4369-a0cb-f52cee42f65f)
 
 ## Выводы
 
-В данном коде выводятся две строки с использованием функции `print()`. Каждая строка содержит разные значения:
-
-1. `print(result)`: Выводится добавлет новую строку в файл.
+Теперь в сам файл мы добавляем новую строку с названием.
 
 ## Лабораторная работа №7
 ### Напишите программу, которая перепишет всю информацию, которая была у вас в файле до этого, например напишет любые данные из
@@ -124,19 +115,17 @@ with open('input.txt', 'r') as f:
 
 ```python
 lines = ['one', 'two', 'three']
-with open('input.txt', 'w') as f:
+with open('qwe.txt', 'w') as f:
     for line in lines:
         f.write('\n Cycle Run ' + line)
     print('Done!')
 ```
 ### Результат.
-![Меню](lab/pic/7.png)
+![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/89a72940-5f1a-4c56-a5ce-147749f2d5e3)
 
 ## Выводы
 
-В данном коде выводятся одна строка с использованием функции `print()`. Каждая строка содержит разные значения:
-
-1. `print('Done!')`: Выводится при выполнении цикла.
+Очистили файл своей перепесью и написали данные из списка.
 
 ## Лабораторная работа №8
 ### Выберите любую папку на своем компьютере, имеющую вложенные директории. Выведите на печать в терминал ее содержимое, как и всех подкаталогов при помощи функции print docs(directory).
@@ -155,13 +144,11 @@ def print_docs(directory):
 print_docs('/Usue/PyCharm/Tema_7/lab/zad')
 ```
 ### Результат.
-![Меню](lab/pic/8.png)
+![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/fe9da80a-afaf-4597-baca-74a3e1929805)
 
 ## Выводы
 
-В данном коде выводятся одна строка с использованием функции `print()`. Каждая строка содержит разные значения:
-
-1. `print(f'Папка {catalog[0]} содержит:')`: Выводится путь и содержание.
+Выводим путь и содержание.
 
 ## Лабораторная работа №9
 ### Документ «input.txt» содержит следующий текст: Приветствие Спасибо Извините Пожалуйста До свидания Ты готов? Как дела? С днем рождения! Удача! Я тебя люблю.
@@ -183,14 +170,11 @@ def longest_words(file):
 print(longest_words('input.txt'))
 ```
 ### Результат.
-![Меню](lab/pic/9.png)
-![Меню](lab/pic/9.1.png)
+![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/b655fb9d-77e4-4511-aa1b-c5ebab535e22)
 
 ## Выводы
 
-В данном коде выводятся четыре строки с использованием функции `print()`. Каждая строка содержит разные значения:
-
-1. `print(longest_words('input.txt'))`: Выводится самое длиное слово.
+В данной программе выводится самое длиное слово в файле.
 
 ## Лабораторная работа №10
 ### Требуется создать csv-файл «rows_300.csv» со следующими столбцами:
@@ -214,7 +198,8 @@ with open('rows_300.csv', 'w', encoding='UTF-8', newline='') as f:
         time.sleep(0.01)
 ```
 ### Результат.
-![Меню](lab/pic/10.png)
+![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/54b1c032-a76f-4c45-a083-e4232e2a44ba)
+
 
 ## Выводы
 Добавляет строки и столбцы в файл rows_300.csv.
@@ -237,13 +222,12 @@ if __name__ == "__main__":
     main()
 ```
 ### Результат.
-![Меню](sam/pic/s1.png)
+![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/6f87d053-b8bd-4088-9261-6894c5b50230)
+![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/e6334c49-2ade-4906-8f1b-1ffe4ab884e1)
 
 ## Выводы
 
-В данном коде выводятся одна строка с использованием функции `print()`. Каждая строка содержит разные значения:
-
-1. `print(f"Самое частое слово: {max_count}, количество: {word_count[max_count]}")`: Выводится частое слово и количество.
+Сделали отчёт по статье где видно количество слов в ней и самое часто встречающееся слово.
 
 ## Самостоятельная работа №2
 ### У вас появилась потребность в ведение книги расходов, посмотрев все существующие варианты вы пришли к выводу что вас ничего не
@@ -258,14 +242,14 @@ def read_data():
             data = file.read()
             return data
     except FileNotFoundError:
-        return "Нет данных для чтения!"
+        return "wrong"
 
 def write_data(data):
     try:
         with open("transactions.txt", "w") as file:
             file.write(data)
     except PermissionError:
-        print("Ошибка разрешения! Пожалуйста, повторите попытку позже.")
+        print("wrong.")
 
 def main():
     data = read_data()
@@ -278,28 +262,25 @@ def main():
             pass
 
     while True:
-        amount = input("Введите сумму транзакции (Enter для выхода): ")
+        amount = input("Введите сумму расходов (Enter для выхода): ")
         if amount == "":
             break
         transactions.append(amount)
         write_data("\n".join(transactions))
-        print(f"Добавлена транзакция:  {amount}")
+        print(f"Добавлена расход:  {amount}")
 
 if __name__ == "__main__":
     main()
 ```
 ### Результат.
-![Меню](sam/pic/s2.png)
+![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/572fd041-5bfe-40e2-9cba-b36929132205)
 
 ## Выводы
 
-В данном коде выводятся одна строка с использованием функции `print()`. Каждая строка содержит разные значения:
-
-1. `print(f"Добавлена транзакция:  {amount}")`: Выводится добавлена транзакция.
+Сделали сохранение файла и добавление в него данных.
   
 ## Самостоятельная работа №3
-### Имеется файл input.txt с текстом на латинице. Напишите программу, которая выводит следующую статистику по тексту: количество букв
-латинского алфавита; число слов; число строк. 
+### Имеется файл input.txt с текстом на латинице. Напишите программу, которая выводит следующую статистику по тексту: количество букв латинского алфавита; число слов; число строк. 
 ### Текст в файле:
 Beautiful is better than ugly.
 Explicit is better than implicit.
@@ -326,13 +307,11 @@ if __name__ == '__main__':
     main()
 ```
 ### Результат.
-![Меню](sam/pic/s3.png)
+![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/a71360c2-47ed-4ac3-ba5b-30044b2532c8)
 
 ## Выводы
 
-В данном коде выводятся одна строка с использованием функции `print()`. Строка содержит значения:
-
-1. `print(f'Input file contains:\n{letters} letters\n{words} words\n{lines} lines')`: Выводится количество символов, слов и строк. 
+Посчитали в программе статистику по тексту.
   
 ## Самостоятельная работа №4
 ### Напишите программу, которая получает на вход предложение, выводит его в терминал, заменяя все запрещенные слова звездочками * (количество звездочек равно количеству букв в
@@ -351,42 +330,54 @@ PYTHON is awesome!!!!
 ****** **
 awesome!!!!
 ```python
-def censore(sentence):
-	words = open('input1.txt','r').read().lower().split() #открываем файл и записываем все слова в список
-	for word in words: #проходимся по всем словам в списке
-		sentence = sentence.replace(word, '*'*len(word)) #если слово встречается в предложении, то заменяем его
-	return sentence
-print(censore(input())) #выводим предложение с замененными словами
+def censor_text(sentence, banned_words):
+    censored_sentence = sentence
+    for word in banned_words:
+        pattern = re.compile(r'\b' + word + r'\b', re.IGNORECASE)
+        censored_sentence = re.sub(pattern, '*' * len(word), censored_sentence)
+    return censored_sentence
+
+def load_banned_words(file_name):
+    with open(file_name, 'r', encoding='utf-8') as file:
+        banned_words = file.read().split()
+    return banned_words
+
+def main():
+    banned_words = load_banned_words('qwe.txt')
+    sentence = input("Введите предложение: ")
+    censored_sentence = censor_text(sentence, banned_words)
+    print("Цензурированное предложение:")
+    print(censored_sentence)
+
+if __name__ == "__main__":
+    main()
 ```
 ### Результат.
-![Меню](sam/pic/s4.png)
+![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/63528818-0405-4741-8bb8-860a13c76669)
 
 ## Выводы
 
-В данном коде выводятся одна строка с использованием функции `print()`. Каждая строка содержит разные значения:
-
-1. `print(censore(input()))`: Выводится предложение с замененными словами.
+Зацензурили.
   
 ## Самостоятельная работа №5
-### Самостоятельно придумайте и решите задачу, которая будет взаимодействовать с текстовым файлом. 
-### Программу для подсчета символов в текстовом файле.
+### Самостоятельно придумайте и решите задачу, которая будет взаимодействовать с текстовым файлом. Программа для подсчета символов в текстовом файле.
 
 ```python
-file = open("file.txt", "r")
-content = file.read()
-
-characters = len(content)
-print("В файле", characters, "символов.")
-file.close()
+with open('qwe.txt', 'r', encoding='utf-8') as file:
+    # Считываем все строки из файла
+    lines = file.readlines()
+character_count = 0
+for line in lines:
+    character_count += len(line)
+print(f'В файле "qwe.txt" {character_count} символов.')
 ```
 ### Результат.
-![Меню](sam/pic/s5.png)
+![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/df1ba325-9a9d-462f-a691-009c4207295b)
+
   
 ## Выводы
 
-В данном коде выводятся одна строка с использованием функции `print()`. Каждая строка содержит разные значения:
-
-1. `print("В файле", characters, "символов.")`: Выводится количество символов в файле.
+В этой задаче я взял посчитать количество символов в файле.
 
 ## Общие выводы по теме
-Python позволяет работать с файлами различными способами, такими как чтение, запись, добавление и удаление данных. Для работы с файлами можно использовать встроенные функции, такие как open(), close() и read(), или модули, такие как os и io. Кроме того, Python поддерживает различные режимы доступа к файлам, такие как “r” для чтения, “w” для записи и “a” для добавления данных.
+Простое взаимодействие с файлами.Пригодится для нейронок.

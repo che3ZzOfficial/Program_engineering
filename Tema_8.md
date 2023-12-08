@@ -1,6 +1,6 @@
 # Тема 8. Основы объектно-ориентированного программирования
 Отчет по Теме #8 выполнил(а):
-- Артюшин Вадим Борисович
+- Деревянкин Владислав Владимирович
 - ОЗИВТ(ППК)-22-2-у
 
 | Задание | Лаб_раб | Сам_раб |
@@ -26,292 +26,264 @@
 
 ```python
 class Car: #Класс для представления автомобиля.
-    def __init__(self, make, model): #Метод инициализации с параметрами: марка и модель автомобиля.
-        self.make = make    #Свойство класса для хранения марки автомобиля.
-        self.model = model  #Свойство класса для хранения модели автомобиля.
+    def __init__(self, make, model): #Это метод инициализации с параметрами, обычно называют __init__
+        self.make = make
+        self.model = model  #Свойство класса для хранения марки автомобиля.
 
-my_car = Car("Toyota", "Trueno") #Создаем экземпляр класса Car с маркой Toyota и моделью Trueno.
+my_car = Car("audi", "r8") #экземпляр класса Car
 ```
-
 ### Результат.
-![Меню](Lab/pic/l1.png)
+![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/4fe60656-083d-448b-9446-e26be0acb6c1)
+
 
 ## Выводы
-В данном коде выводятся одна строка с использованием функции `my_car`. Каждая строка содержит разные значения:
-
-1. `my_car = Car("Toyota", "Trueno")` #Создаем экземпляр класса Car с маркой Toyota и моделью Trueno.
+Создали класс с методом и его экземпляром.
 
 ## Лабораторная работа №2
 ### Дополните код из первого задания, добавив в него атрибуты и методы класса, заставьте машину “поехать”. Напишите комментарии для кода, объясняющие его работу. Результатом выполнения задания будет листинг кода с комментариями и получившийся вывод в консоль.
 
 ```python
-class Car: # Класс для представления автомобиля
-    def __init__(self, make, model): # Метод инициализации автомобиля с параметрами: марка и модель
-        self.make = make # Свойство класса для хранения марки
-        self.model = model # Свойство класса для хранения модели
+class Car: #Класс для представления автомобиля.
+    def __init__(self, make, model): #Это метод инициализации с параметрами, обычно называют __init__
+        self.make = make
+        self.model = model  #Свойство класса для хранения марки автомобиля.
 
     def drive(self): # Метод для управления автомобилем
-        print(f"Driving the {self.make} {self.model}") # Вывод информации о марке и модели
+        print(self.make,self.model) # Вывод информации о марке и модели
+        print ('едет')
 
-my_car = Car("Toyota", "Trueno") # Создание экземпляра класса Car с определенными параметрами
-my_car.drive() # Управление созданным экземпляром
+my_car = Car("audi", "r8") #экземпляр класса Car
+my_car.drive() # Для запуска
 ```
 ### Результат.
-![Меню](Lab/pic/l2.png)
+![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/d7634aba-9638-49bb-a9c8-a76600dcc9b1)
+![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/a4cdcd03-6348-4cff-9675-297a0cbe7041)
+
 
 ## Выводы
+Добавили код из первого задания и дополнили его дополнительным атрибутом и методом класса
 
-В данном коде выводятся одна строка с использованием функции `print()`. Каждая строка содержит разные значения:
-
-1. `print(f"Driving the {self.make} {self.model}")`: Выводится предложение. 
 
 ## Лабораторная работа №3
 ### Создайте новый класс “ElectricCar” с методом “charge” и атрибутом емкость батареи. Реализуйте его наследование от класса, созданного в первом задании. Заставьте машину поехать, а потом заряжаться. Михаил А. Панов Напишите комментарии для кода, объясняющие его работу. Результатом выполнения задания будет листинг кода с комментариями и получившийся вывод в консоль
 
 ```python
-class Car: #Он определяет основные характеристики автомобиля, такие как марка и модель. Также он имеет метод drive(), который выводит на экран сообщение о том, что автомобиль едет.
-    def __init__(self, make, model): #Это конструктор класса. Он инициализирует атрибуты make и model для каждого экземпляра класса.
-        self.make = make #Эта строка устанавливает атрибут make для экземпляра класса.
-        self.model = model #Эта строка делает то же самое для атрибута model.
-    def drive(self): #Данный метод имитирует процесс вождения автомобиля.
-        print(f"Driving the {self.make} {self.model}") #Эта строка выводит информацию о марке и модели автомобиля на экран.
-my_car = Car("Toyota", "Trueno") #Здесь создается экземпляр класса Car с маркой Toyota и моделью Trueno.
-my_car.drive() #Вызов метода drive() для экземпляра my_car имитирует процесс управления автомобилем.
-class ElectricCar(Car): #Этот класс наследует все методы и атрибуты от класса Car и добавляет новые.
-    def __init__(self, make, model, battery_capacity): #Конструктор этого класса принимает дополнительные параметры: емкость аккумулятора.
-        super().__init__(make, model) #Вызывается конструктор родительского класса для инициализации атрибутов make и model.
-        self.battery_capacity = battery_capacity #Атрибут battery_capacity присваивается экземпляру класса.
-    def charge(self): #имитирует зарядку аккумулятора.
-        print(f"Charging the {self.make} {self.model} with {self.battery_capacity}  kWh") #Вывод информации о процессе зарядки на экран.
-my_electric_car = ElectricCar("Telsa", "Model S", 75) #Создание экземпляра класса ElectricCar с маркой Telsa, моделью Model S и емкостью аккумулятора 75 kWh.
-my_electric_car.drive() #
+class Car: #Класс для представления автомобиля.
+    def __init__(self, make, model): #Это метод инициализации с параметрами, обычно называют __init__
+        self.make = make
+        self.model = model  #Свойство класса для хранения марки автомобиля.
+    def drive(self): # делаем первое действие (метод)
+        print(f"Driving the {self.make} {self.model}")  # Эта строка выводит информацию о марке и модели автомобиля на экран.
+my_car = Car("audi", "r8") #экземпляр класса Car
+my_car.drive() # Для запуска первого действия
+class ElectricCar(Car): #Новый класс который копирует все методы и атрибуты от класса Car.
+
+    def __init__(self, make, model, battery_capacity): #функция с новыми параметрами
+        super().__init__(make, model) #опять копируем класс с новыми параметрами
+        self.battery_capacity = battery_capacity # из атрибута battery_capacity делаем экземпляр класса
+    def charge(self): #делаем второе действие (метод)
+        print(f"Charging the {self.make} {self.model} with {self.battery_capacity}  kWh") #Вывод на экран
+my_electric_car = ElectricCar("CyberTrack", "S", 50) #Создание экземпляра класса ElectricCar 
+my_electric_car.charge() # запуск второго действия
 ```
 ### Результат.
-![Меню](Lab/pic/l3.png)
+![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/18c4db07-b538-49aa-a91e-669ee14784fb)
 
 ## Выводы
 
-В данном коде выводятся две строки с использованием функции `print()`. Каждая строка содержит разные значения:
-
-1. `print(f"Driving the {self.make} {self.model}")`: Выводится предложение.
-2. `print(f"Charging the {self.make} {self.model} with {self.battery_capacity}  kWh")`: Выводится предложение. 
+Сделали второй метод с добавочным действием.
 
 
 ## Лабораторная работа №4
 ### Реализуйте инкапсуляцию для класса, созданного в первом задании. Создайте защищенный атрибут производителя и приватный атрибут модели. Вызовите защищенный атрибут и заставьте машину поехать. Напишите комментарии для кода, объясняющие его работу. Результатом выполнения задания будет листинг кода с комментариями и получившийся вывод в консоль.
 ```python
-class Car: #Эта строка описывает класс с именем Car. Внутри фигурных скобок содержатся определения методов и переменных, которые принадлежат этому классу.
-    def __init__(self, make, model): #Это конструктор класса, который инициализирует его атрибуты. В данном случае он принимает два аргумента: make (марка автомобиля) и model (модель автомобиля).
-        self.make = make #Атрибут self.make устанавливается равным аргументу make.
-        self.model = model #То же самое происходит с атрибутом model и его аргументом model.
+class Car: #Класс для представления автомобиля.
+    def __init__(self, make, model): #Это метод инициализации с параметрами, обычно называют __init__
+        self._make = make
+        self.__model = model  #Свойство класса для хранения марки автомобиля.
+    def drive(self): # делаем первое действие (метод)
+        print(f"Driving the {self._make} {self.__model}")  # вывод на экран.
 
-    def drive(self): #Это метод, который “имитирует” вождение автомобиля. Он просто выводит сообщение на экран.
-        print(f"Driving the {self.make} {self.model}") #Эта строка выводит на экран информацию о марке и модели автомобиля.
-
-my_car = Car("Toyota", "Trueno") #Здесь создается экземпляр класса Car, который представляет автомобиль марки “Toyota” модели “Trueno”.
-
-
-print(my_car.make) #Эта строка выводит марку автомобиля, который был создан выше.
-my_car.drive() #Вызов метода drive() на Aэкземпляре my_car “имитирует” процесс вождения автомобиля.
+my_car = Car("audi", "r8") #экземпляр класса Car
+print(my_car._make)
+#print(my_car.__model)
+my_car.drive()
 ```
 ### Результат.
-![Меню](Lab/pic/l4.png)
+![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/7a12f903-e57c-48e4-837c-a1fa2ed6c6b9)
+
 
 ## Выводы
 
-В данном коде выводятся две строки с использованием функции `print()`. Каждая строка содержит разные значения:
-
-1. `print(f"Driving the {self.make} {self.model}")`: Выводится предложение.
-2. `print(my_car.make)`: Выводится функция.
+Сделали защищенный атрибут производителя и приватный атрибут модели.
 
 ## Лабораторная работа №5
 ### Реализуйте полиморфизм создав основной (общий) класс “Shape”, а также еще два класса “Rectangle” и “Circle”. Внутри последних двух классов реализуйте методы для подсчета площади фигуры. После этого создайте массив с фигурами, поместите туда круг и прямоугольник, затем при помощи цикла выведите их площади. Напишите комментарии для кода, объясняющие его работу. Результатом выполнения задания будет листинг кода с комментариями и получившийся вывод в консоль.
 
 ```python
-class Shape: #Определяется класс Shape.
-    def area(self): #Определяется метод area в классе Shape. Пока он не имеет реализации и просто использует оператор pass.
-        pass #Заканчивается определение класса Shape.
-class Rectangle(Shape): #Создаем класс Rectangle, который наследуется от класса Shape
-    def __init__(self, width, height): #Определяем конструктор класса, который принимает параметры width и height
-        self.width = width #
-        self.height = height #Инициализируем атрибуты width и height с помощью переданных значений
+class Shape: #Создаем новый класс
+    def area(self): #создаем затычку для того чтобы в конце её использовать
+        pass #скипаем
+class Rectangle(Shape): #Создаем новый класс
+    def __init__(self, width, height): #Делаем функцию (метод) с параметрами длины и ширины
+        self.width = width # атрибутыч длины
+        self.height = height #атрибут ширины
 
-    def area(self): #Определяем метод area, который возвращает площадь прямоугольника, вычисленную как произведение ширины и высоты
+    def area(self): # теперь используем затычку и возвращаем результат на area
         return self.width * self.height #
 
-class Circle(Shape): #Определяется класс Circle, который наследуется от класса Shape.
-    def __init__(self, radius): #Определяется метод инициализации (__init__) в классе Circle. Он принимает один параметр - radius (радиус).
-        self.radius = radius #В методе инициализации класса Circle устанавливается значение атрибута radius на основе переданного параметра.
+class Circle(Shape): #новый класс
+    def __init__(self, radius): #Делаем функцию (метод) с параметром радиуса
+        self.radius = radius #атрибут радиуса прописываем обязательно
 
-    def area(self): #Определяется метод area для класса Circle, который переопределяет метод area из класса Shape.
-        return 3.14 * self.radius * self.radius #В методе area класса Circle вычисляется и возвращается площадь круга, умножая квадрат радиуса на число Pi (3.14).
+    def area(self): #опять используем затычку чтобы через неё выводить ответ
+        return 3.14 * self.radius * self.radius #вычисления
 
-shapes = [Rectangle(4, 5), Circle(3)] #Создается список shapes, который содержит два элемента: объекты классов Rectangle и Circle, созданные с определенными параметрами.
-for shape in shapes: #Выполняется цикл, который проходит по каждому элементу списка shapes.
-    print(shape.area()) #Выводится площадь текущей фигуры (shape) с помощью вызова метода area() для текущего объекта.
+shapes = [Rectangle(4, 5), Circle(3)] #теперь заводим данные в них через список
+for shape in shapes: #делаем цикл чтобы пройтись по каждому классу
+    print(shape.area()) #выводим ответ в консоль
 ```
 ### Результат.
-![Меню](Lab/pic/l5.png)
+![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/70ff8ec2-5e80-4551-bb9f-63e977b3357a)
 
 ## Выводы
 
-В данном коде выводятся одна строка с использованием функции `print()`. Каждая строка содержит разные значения:
-
-1. `print(shape.area())`: Выводится площадь текущей фигуры (shape) с помощью вызова метода area() для текущего объекта.
+Сделали с помощью классов подсчёт площади фигуры
 
 ## Самостоятельная работа №1
 ### Самостоятельно создайте класс и его объект. Они должны отличаться, от тех, что указаны в теоретическом материале (методичке) и лабораторных заданиях. Результатом выполнения задания будет листинг кода и получившийся вывод консоли.
 
 ```python
-class CPU:
-    def __init__(self, Brand, Models, Cores, Threads):
-        self.Brand = Brand
-        self.Models = Models
-        self.Cores = Cores
-        self.Threads = Threads
+class vn:
+    def __init__(self, Name,janr,score,prodoljitelnost):
+        self.Name = Name
+        self.janr = janr
+        self.score = score
+        self.prodoljitelnost = prodoljitelnost
 
-my_CPU = CPU("Amd", "Ryzen 7", "8", "16")
+    def print_s (self):
+        print(f"game {self.Name} {self.janr} {self.score} {self.prodoljitelnost}")  # просто нужен для вывода
+
+vndb = vn('Everlasting Summer','eroge','7.16','25hr')
+vndb.print_s() # Для запуска первого действия
 ```
 ### Результат.
-![Меню](Sam/pic/s1.png)
+![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/bd313674-ed0f-4947-b350-4927696b455a)
 
-В данном коде выводятся одна строка с использованием функции `my_CPU`. Каждая строка содержит разные значения:
 
-1. `my_CPU = CPU("Amd", "Ryzen 7", "8", "16")`.
+Сделали свой класс, атрибутами с выводом результата
 
 ## Самостоятельная работа №2
 ### Самостоятельно создайте атрибуты и методы для ранее созданного класса. Они должны отличаться, от тех, что указаны в теоретическом материале (методичке) и лабораторных заданиях. Результатом выполнения задания будет листинг кода и получившийся вывод консоли.
 
 ```python
-class CPU:
-    def __init__(self, Brand, Models, Cores, Threads):
-        self.Brand = Brand
-        self.Models = Models
-        self.Cores = Cores
-        self.Threads = Threads
+class vn:
+    def __init__(self, Name,janr,score,prodoljitelnost):
+        self.Name = Name
+        self.janr = janr
+        self.score = score
+        self.prodoljitelnost = prodoljitelnost
 
-    def Test_CPU(self):
-        print(f"Процессор {self.Brand} {self.Models} имеет {self.Cores} ядер и {self.Threads} потоков")
+    def print_s (self):
+        print(f"game {self.Name} {self.janr} {self.score} {self.prodoljitelnost}")  # просто нужен для вывода
 
-my_CPU = CPU("Amd", "Ryzen 7", "8", "16")
-my_CPU.Test_CPU()
+vndb = vn('Everlasting Summer','eroge','7.16','25hr')
+vndb.print_s() # Для запуска первого действия
 ```
 ### Результат.
-![Меню](Sam/pic/s2.png)
+![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/bd313674-ed0f-4947-b350-4927696b455a)
 
 ## Выводы
 
-В данном коде выводятся одна строка с использованием функции `print()`. Каждая строка содержит разные значения:
-
-1. `print(f"Процессор {self.Brand} {self.Models} имеет {self.Cores} ядер и {self.Threads} потоков")`: Выводится предложение. 
+Тоже самое сделал как и в прошлом. 
   
 ## Самостоятельная работа №3
 ### Самостоятельно реализуйте наследование, продолжая работать с ранее созданным классом. Оно должно отличаться, от того, что указано в теоретическом материале (методичке) и лабораторных заданиях. Результатом выполнения задания будет листинг кода и получившийся вывод консоли.
 
 ```python
-class CPU:
-    def __init__(self, Brand, Models, Cores, Threads):
-        self.Brand = Brand
-        self.Models = Models
-        self.Cores = Cores
-        self.Threads = Threads
+class Everlasting_Summer:
+    def __init__(self,janr,score,prodoljitelnost):
+        self.janr = janr
+        self.score = score
+        self.prodoljitelnost = prodoljitelnost
 
-    def Test_CPU(self):
-        print(f"Процессор {self.Brand} {self.Models} имеет {self.Cores} ядер и {self.Threads} потоков")
+    def print_s (self):
+        print(f"game {self.janr} {self.score} {self.prodoljitelnost}")  # просто нужен для вывода
+ruvn = Everlasting_Summer('eroge','7.16','25hr')
+ruvn.print_s() # Для запуска первого действия
+class vn(Everlasting_Summer):
+    def __init__(self,janr, score, prodoljitelnost,name):
+        super().__init__(janr,score,prodoljitelnost)
+        self.name = name
 
+    def credo(self):
+        print(f"game {self.name} {self.janr} {self.score} {self.prodoljitelnost}")  # просто нужен для вывода
 
-my_CPU = CPU("Amd", "Ryzen 7", "8", "16")
-my_CPU.Test_CPU()
-
-
-class Intel_CPU(CPU):
-    def __init__(self, Brand, Models, Cores, Threads, TurboBoost):
-        super().__init__(Brand, Models, Cores, Threads)
-        self.TurboBoost = TurboBoost
-
-    def boost(self):
-        print(f"Процессор {self.Brand} {self.Models} имеет {self.TurboBoost} версии")
-
-al_CPU = Intel_CPU("Intel", "i7-8700", "6", "8", "2.0")
-al_CPU.Test_CPU()
-al_CPU.boost()
+vndb = vn("sedze-ai,ury", "8.15", "20hr", 'Flowers -Le volume sur ete-')
+vndb.credo()
 ```
 ### Результат.
-![Меню](Sam/pic/s3.png)
+![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/5237abbf-50cd-4e00-85a8-3982e9d84408)
 
 ## Выводы
 
-В данном коде выводятся две строки с использованием функции `print()`. Каждая строка содержит разные значения:
-
-1. `print(f"Процессор {self.Brand} {self.Models} имеет {self.Cores} ядер и {self.Threads} потоков")`: Выводится предложение.
-2. `print(f"Процессор {self.Brand} {self.Models} имеет {self.TurboBoost} версии")`: Выводится предложение. 
+Сделали по своему примеру из лабораторки 3
   
 ## Самостоятельная работа №4
 ### Самостоятельно реализуйте инкапсуляцию, продолжая работать с ранее созданным классом. Она должна отличаться, от того, что указана в теоретическом материале (методичке) и лабораторных заданиях. Результатом выполнения задания будет листинг кода и получившийся вывод консоли.
 ```python
-class CPU:
-    def __init__(self, Brand, Models, Cores, Threads):
-        self._Brand = Brand
-        self.__Models = Models
-        self.___Cores = Cores
-        self.____Threads = Threads
+class Everlasting_Summer:
+    def __init__(self,janr,score,prodoljitelnost):
+        self._janr = janr
+        self.__score = score
+        self.___prodoljitelnost = prodoljitelnost
 
-    def Test_CPU(self):
-        print(f"Процессор {self._Brand} {self.__Models} имеет {self.___Cores} ядер и {self.____Threads} потоков")
-
-my_CPU = CPU("Amd", "Ryzen 7", "8", "16")
-print(my_CPU._Brand)
-my_CPU.Test_CPU()
+    def print_s (self):
+        print(f"game {self._janr} {self.__score} {self.___prodoljitelnost}")  # просто нужен для вывода
+ruvn = Everlasting_Summer('eroge','7.16','25hr')
+ruvn.print_s() # Для запуска первого действия
 ```
 ### Результат.
-![Меню](Sam/pic/s4.png)
+![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/5246e867-d1e6-4237-a51d-e095eb1e3ba7)
 
 ## Выводы
 
-В данном коде выводятся две строки с использованием функции `print()`. Каждая строка содержит разные значения:
-
-1. `print(f"Процессор {self._Brand} {self.__Models} имеет {self.___Cores} ядер и {self.____Threads} потоков")`: Выводится предложение.
-2. `print(my_CPU._Brand)`: Выводится функция.
+Сделали по своему примеру из лабораторки 4
   
 ## Самостоятельная работа №5
 ### Самостоятельно реализуйте полиморфизм. Он должен отличаться, от того, что указан в теоретическом материале (методичке) и лабораторных заданиях. Результатом выполнения задания будет листинг кода и получившийся вывод консоли.
 
 ```python
-class Camera:
-    def take_picture(self):
-        print('фотографирую')
+class ON_OFF:
+    def on(self):
+        print('включён')
 
-    def get_resolution(self):
-        print('разрешение недоступно')
+    def off(self):
+        print('не включён')
 
 
-class Phone:
-    def call(self):
-        print('зовущий')
+class PEREF:
+    def ok(self):
+        print('подключено')
 
-    def charge(self):
-        print('зарядка')
+    def neok(self):
+        print('не подключено')
 
-class CameraPhone(Camera, Phone):
+class PC(ON_OFF, PEREF):
     pass
 
-camera_phone = CameraPhone()
-camera_phone.take_picture()
-camera_phone.get_resolution()
-camera_phone.call()
-camera_phone.charge()
+camera_phone = PC()
+camera_phone.on()
+camera_phone.off()
+camera_phone.ok()
+camera_phone.neok()
 ```
 ### Результат.
-![Меню](Sam/pic/s5.png)
-  
+![image](https://github.com/che3ZzOfficial/Program_engineering/assets/122799788/1b634271-519e-4c1d-9404-7274d986d93c)
+
 ## Выводы
 
-В данном коде выводятся одна строка с использованием функции `print()`. Каждая строка содержит разные значения:
-
-1. `print('фотографирую')`: Выводится фотографирую.
-2. `print('разрешение недоступно')`: Выводится разрешение недоступно.
-3. `print('зовущий')`: Выводится зовущий.
-4. `print('зарядка')`: Выводится зарядка.
+Сделали по примеру лабораторки из задания 5.
 
 ## Общие выводы по теме
-Python позволяет работать с файлами различными способами, такими как чтение, запись, добавление и удаление данных. Для работы с файлами можно использовать встроенные функции, такие как open(), close() и read(), или модули, такие как os и io. Кроме того, Python поддерживает различные режимы доступа к файлам, такие как “r” для чтения, “w” для записи и “a” для добавления данных.
+самое лучшее изобретение для большого кода.
